@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo Dropdown Menu</title>
+
+    <style>
+        .cor {
+            background-color: rgba(0, 68, 255, 0.9);
+            color: white;
+            font-weight: bold;
+        }
+
+        .corMenu {
+            background-color: rgba(0, 68, 255, 0.9);
+            color: white;
+            font-weight: bold;
+        }
+
+        .sombra {
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+            margin-right: 2px;
+            margin-bottom: 2px;
+        }
+
+        .corItemMenu {
+            color: black;
+            font-weight: bold;
+        }
+
+        label {
+            color: black;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        form {
+            margin: 15px;
+            padding-top: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top corMenu sombra">
+            <a class="navbar-brand">Brand</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav corItemMenu">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Cadastro</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="#">Clientes</a>
+                            <a class="dropdown-item" href="#">Fornecedor</a>
+                            <a class="dropdown-item" href="#">Conta Corrente</a>
+                            <a class="dropdown-item" href="#">Funcionários</a>
+                        <div class="dropdown-divider"> </div>
+                        <a class="dropdown-item" href="#">Ajuda</a>
+                        </div>
+                    </li>
+                    <li class="nav-item corItemMenu">
+                        <a class="nav-link" href="#">Movimentações</a>
+                    </li>
+                    <li class="nav-item corItemMenu">
+                        <a class="nav-link" href="#">Relatórios</a>
+                    </li>
+                    <li class="nav-item corItemMenu">
+                        <a class="nav-link" href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <form method="get" action="" class="form-group">
+            <div class="container">
+                <div class="card sombra">
+                    <div class="card-header cor">
+                        <p>Cadastro de Clientes</p>
+                    </div>
+                    <div class="card-body form-group">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <label for="">Nome</label>
+                                <input type="text" id="txtNome" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="">Data de Nascimento</label>
+                                <input type="date" id="txtDataNascimento" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="">CPF</label>
+                                <input type="text" id="txtCPF" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">RG</label>
+                                <input type="text" id="txtRG" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">CNH</label>
+                                <input type="text" id="txtCNH" class="form-control">
+                            </div>
+
+                        </div>
+                        <div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label for="">Nome da Mãe</label>
+                                        <input type="text" id="txtNomeMae" class="form-control">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="">Nome do Pai</label>
+                                        <input type="text" id="txtNomePai" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white">
+                        <div class="row form-group">
+                            <div class="col md 4">
+                                <button type="button" id="cndSalvar" class="btn cor form-control">Salvar</button>
+                            </div>
+                            <div class="col md 4">
+                                <button type="button" id="cndExcluir" class="btn cor form-control">Excluir</button>
+                            </div>
+                            <div class="col md 4">
+                                <button type="button" id="cndPesquisar" class=" btn cor form-control">Pesquisar</button>
+                            </div>
+                            <div class="col md 4">
+                                <button type="button" id="cndSair" class="btn cor form-control">Sair</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    <script>
+        $('.dropdown-toggle').dropdown()
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

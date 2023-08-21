@@ -1,0 +1,18 @@
+Lista encadeada: cada elemento armazena o endereço do próximo elemento da lista. São melhores para inserções.
+
+Array: ótimos para ler elementos aleatórios.Todos os elementos devem ser do mesmo tipo (boas práticas).
+
+Tempo de execução: 
+
+		| Array | Listas
+_______________________________
+Leitura	| O(1)  | O(n)
+_______________________________
+Inserção	| O(n)  | O(1)
+_______________________________
+Deleção	| O(n)  | O(1)
+_______________________________
+
+
+O(n): linear
+O(1): constante

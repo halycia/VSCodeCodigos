@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo Bootstrap Modal</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Exemplo Bootstrap Modal</h2>
+    </div>
+    <!-- Modal trigger button -->
+    <button type="button" class="btn btn-primary btn-lg form-control" data-bs-toggle="modal" data-bs-target="#modalId">
+      Executar Modal
+    </button>
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: yellow;">
+                    <h5 class="modal-title" id="modalTitleId">Oração do Programador</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                   Código nosso que estás em C; Santificado seja vós Console; Venha a nós o vosso array[10]; E seja feita, sim, {vossa chave}; Assim no if { } como no else { }; O for (nosso; de cada dia; nos dai hoje++); Debugai as nossas sentenças; Assim como nós colocamos O ponto e vírgula esquecido; E não nos     deixeis errar        indentação; Mas livrai-nos das funções recursivas; A main (). </div>
+                <div class="modal-footer" style="background-color: yellowgreen;">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ta ok</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

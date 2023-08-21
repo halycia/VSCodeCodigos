@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo Bootstrap Modal</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Exemplo Bootstrap Modal</h2>
+    </div>
+    <!-- Modal trigger button -->
+    <button type="button" class="btn btn-primary btn-lg form-control" data-bs-toggle="modal" data-bs-target="#modalId">
+      Executar Modal
+    </button>
+    
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="color: yellow;">
+                    <h5 class="modal-title" id="modalTitleId">Exemplo - Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Planaltina é uma região administrativa do Distrito Federal brasileiro.
+
+                    História
+                    A partir da primeira metade do século XVIII, inicia-se a exploração das minas de ouro e esmeralda e o povoamento do interior de Goiás pelos bandeirantes, desde então essa região passa a ser frequentada como ponto de passagem da estrada real, utilizada para o escoamento de ouro e arrecadação de dízimos territoriais à coroa.
+                    
+                    Os documentos existentes não indicam a data exata da fundação de Planaltina, no entanto a data convencionada de fundação de Planaltina é 19 de agosto de 1859, mas há relatos de alguns historiadores de que a cidade possua mais de 200 anos.
+                    
+                    Segundo a tradição oral, o primeiro nome do povoado foi Mestre d'Armas, devido ao fato de que na região se instalara um ferreiro, perito na arte de consertar e manejar armas que recebeu o título de Mestre, expressão que passou a identificar o local.
+                    
+                    Atribui-se, entretanto, a fundação do núcleo em que se originou Planaltina a José Gomes Rabelo, fazendeiro que se transferiu da então Capital da Província de Goiás para a Lagoa Bonita, estendendo posteriormente suas posses até à morada do "Mestre D'armas" . Construíram uma Capela de Taipa, em pagamento de voto feito a São Sebastião, para se livrarem de uma epidemia que os atacava na época. Dona Marta Carlos Alarcão encomendou de Portugal, uma imagem do Santo, trabalhada em madeira, para ser colocada na capela, sendo mais tarde substituída por outra maior, ao ampliarem a construção. A atual Igreja de São Sebastião conserva atualmente as mesmas características da sua criação.
+                </div>
+                <div class="modal-footer" style="background-color: yellowgreen;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Bandeira_de_Planaltina_%28DF%29.png/125px-Bandeira_de_Planaltina_%28DF%29.png" alt="PlanaltinasFlag">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+    
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

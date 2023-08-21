@@ -16,6 +16,3 @@ for i in range(10000):
         color("#ce1f26")
     goto(0,0)
 done()
-
-
-#tryna do a star now

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Exemplo Formulário Card</title>
+
+<style>
+    .cor{
+        background-color: rgba(0, 68, 255, 0.6);
+        color: white;
+        font-weight: bold;
+    }
+    .sombra{
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23);
+        margin-right: 2px;
+        margin-bottom: 2px;
+    }
+    label{
+        color: black;
+        font-weight: bold;
+        font-size: 16px;
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Exemplo Formulário Card</h2>
+        <div class="card sombra">
+            <div class="card-header cor">
+                <p>Cadastro de Clientes</p>
+            </div>
+            <div class="card-body form-group">
+                <div class="row">
+                    <div class="col-md-9">
+                        <label for="">Nome</label>
+                        <input type="text" id="txtNome" class="form-control">
+                    </div>    
+                    <div class="col-md-3">
+                        <label for="">Data de Nascimento</label>
+                        <input type="date" id="txtDataNascimento" class="form-control">
+                    </div>      
+                </div> 
+                <div class="row">
+                    <div class="col-md-4">
+                        <label for="">CPF</label>
+                        <input type="text" id="txtCPF" class="form-control">
+                    </div> 
+                    <div class="col-md-4">
+                        <label for="">RG</label>
+                        <input type="text" id="txtRG" class="form-control">
+                    </div> 
+                    <div class="col-md-4">
+                        <label for="">CNH</label>
+                        <input type="text" id="txtCNH" class="form-control">
+                    </div> 
+                
+                </div>
+                <div>
+                    <div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="">Nome da Mãe</label>
+                                <input type="text" id="txtNomeMae" class="form-control">
+                            </div> 
+                            <div class="col-md-6">
+                                <label for="">Nome do Pai</label>
+                                <input type="text" id="txtNomePai" class="form-control">
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card-footer bg-white">
+                <div class="row form-group">
+                    <div class="col md 4">
+                        <button type="button" id="cndSalvar" class= "btn cor form-control">Salvar</button>
+                    </div>
+                    <div class="col md 4">
+                        <button type="button" id="cndExcluir" class= "btn cor form-control">Excluir</button>
+                    </div>
+                    <div class="col md 4">
+                        <button type="button" id="cndPesquisar" class= " btn cor form-control">Pesquisar</button>
+                    </div>
+                    <div class="col md 4">
+                        <button type="button" id="cndSair" class= "btn cor form-control">Sair</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

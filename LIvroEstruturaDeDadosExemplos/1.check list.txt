@@ -1,0 +1,21 @@
+Pesquisa binária ok
+Tempo de execução ok
+Notação Big O ok
+Ordenação por seleção ok
+Recursão ok
+Quicksort
+Tabelas Hash
+Pesquisa em Largura
+Algoritmo de Dijkstra
+Algoritmos gulosos
+Programação dinâmica
+K-vizinhos mais próximos
+Próximos passos
+
+capítulos do livro
+pg 66
+
+ver big(O) python documentation
+
+"Os loops podem melhorar o desempenho do seu programa. A recursão melhora o desempenho do seu programador. 
+			-Leigh Caldwell"
